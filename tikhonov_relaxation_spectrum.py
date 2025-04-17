@@ -2,7 +2,8 @@
 #
 # Python script for determining the relaxation modes in relaxation spectra
 #   Version 1.2
-# © Roy Wink, TU Eindhoven, 2025
+# Author:   Roy Wink, TU Eindhoven, 2025
+# License:  GNU GPLv3
 #
 # -----------------------------------------------------------------------------
 #
@@ -21,8 +22,8 @@
 
 # ----- ENTER SETTINGS HERE ---------------------------------------------------
 
-data_input  = 'temp\\1_5000_t500_depgaus002_lcurvefig.txt'
-data_output = 'temp\\out_1_5000_t500_depgaus002_lcurvefig.txt'
+data_input  = 'path\\input_data.txt'
+data_output = 'path\\ouput_data.txt'
 
 export_lcurve = True
 
@@ -401,12 +402,12 @@ def lcfun(lambda_, s, beta, xi):
 
 def tikhonov(U, s, V, b, lambda_, x_0):
     """
-    Compute the Tikhonov regularized solution x_lambda given the SVD, 
+    Compute the Tikhonov regularized solution x_lambda given the SVD,
     solving for the standard-form regularization:
-        
+
     min { || A x - b ||^2 + lambda^2 || x - x_0 ||^2 } .
 
-    The function assumes lambda_ is a list or array containing a single 
+    The function assumes lambda_ is a list or array containing a single
     (positive) regularization parameter and x_0 is always specified (not None)
 
     Args:
