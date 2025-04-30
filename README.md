@@ -72,6 +72,7 @@ No header row should be included.
 - If enabled, a second file with the L-curve data will be created containing three columns (here `export_data_lcurve.txt`). This contains:
   - On the first line: the optimal regression parameter,  the residual- and the solution norm at the corner of the L-curve.
   - The rest of the file: all 200 tested regularization parameters, and the found residual- and the solution norms. 
+- The optimal regularization parameter and the peak in relaxation time are also printed to the console.
 
 ## Notes
 
