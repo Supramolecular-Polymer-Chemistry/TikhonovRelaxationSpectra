@@ -6,7 +6,7 @@ This Python script analyzes time-dependent relaxation data to identify relaxatio
 
 The Python script that was made for this work is built in such a manner that settings can be changed intuitively when an integrated development environment (IDE) is used. For operation of the script, no prior knowledge is required about Python or the underlying algorithms. 
 
-For more background information on the method and especially the limits of this script, refer to the associated atricle and its supporting information: 
+For more background information on the method and especially the limits of this script, refer to the associated article and its supporting information: 
 
 > Wink, R. *et al.* "Title of the Paper." Journal Name, Volume(Issue), Year. [DOI or URL]
 
