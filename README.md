@@ -40,8 +40,8 @@ The script uses **relative file paths**, meaning file locations are interpreted 
 2. At the top of the script, modify only the following settings:
 
 ```python
-data_input  = 'data\input_data.txt'
-data_output = 'data\export_data.txt'
+data_input  = 'data\\input_data.txt'
+data_output = 'data\\export_data.txt'
 
 export_lcurve = True
 ```
