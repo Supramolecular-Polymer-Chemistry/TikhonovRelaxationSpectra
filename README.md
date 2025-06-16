@@ -65,7 +65,7 @@ No header row should be included.
 
 ## Output
 
-  *The plots will appear in the Spyder plot viewer. It is not exported unless manually saved.*
+  *The plots will appear in the Spyder plot viewer. No images are exported unless manually saved.*
 - A plot of the computed relaxation spectrum
 - A plot of the L-curve with the selected corner
 - Output text file containing the relaxation spectrum (`data_output`; here `export_data.txt`). This contains two columns, the relaxation times and their respective relaxation strengths. Note that the relaxation times will be in the same unit as the provided time data.
