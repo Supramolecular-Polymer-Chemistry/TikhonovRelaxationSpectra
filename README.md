@@ -61,6 +61,12 @@ The input file should be a plain text file with two columns:
 - First column: time values (e.g. in seconds)
 - Second column: corresponding experimental data
 
+Data columns should be separated by tabs. If the user prefers a different delimiter, one could chage the code to define one, in line 502:
+
+```python
+import_file = np.loadtxt(data_input, delimiter=',')
+```
+
 No header row should be included.
 
 ## Output
