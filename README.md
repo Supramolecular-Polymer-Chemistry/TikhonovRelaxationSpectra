@@ -107,4 +107,4 @@ You are free to use, study, share and modify the code under the following condit
 For the full license text, see the LICENCE.md file, or  
 https://www.gnu.org/licenses/gpl-3.0.html
 
-Users of the code are kindly requested to cite the present work when employing the code in scientific work.
+Users of the code are kindly requested to **cite the associated article** when employing the code in scientific work.
