@@ -1,5 +1,7 @@
 # Tikhonov Relaxation Spectra Analysis
 
+![Graphical abstract Tikhonov](img/Tikhonov_graphical_abstract_v2.png)
+
 ## Purpose
 
 This Python script analyzes time-dependent relaxation data to identify relaxation modes using Tikhonov regularization. It includes automated selection of the regularization parameter through L-curve analysis. The script is adapted from established numerical methods and is intended for use by experimental researchers without prior coding experience.
@@ -41,7 +43,7 @@ The script uses **relative file paths**, meaning file locations are interpreted 
 
 ```python
 data_input  = 'data\\input_data.txt'
-data_output = 'data\\export_data.txt'
+data_output = 'data\\output_data.txt'
 
 export_lcurve = True
 ```
@@ -61,7 +63,7 @@ The input file should be a plain text file with two columns:
 - First column: time values (e.g. in seconds)
 - Second column: corresponding experimental data
 
-Data columns should be separated by tabs. If the user prefers a different delimiter, one could chage the code to define one, in line 502:
+Data columns should be separated by whitespace or tabs. If the user prefers a different delimiter, one could chage the code to define one, in line 502:
 
 ```python
 import_file = np.loadtxt(data_input, delimiter=',')
@@ -74,8 +76,8 @@ No header row should be included.
   *The plots will appear in the Spyder plot viewer. No images are exported unless manually saved.*
 - A plot of the computed relaxation spectrum
 - A plot of the L-curve with the selected corner
-- Output text file containing the relaxation spectrum (`data_output`; here `export_data.txt`). This contains two columns, the relaxation times and their respective relaxation strengths. Note that the relaxation times will be in the same unit as the provided time data.
-- If enabled, a second file with the L-curve data will be created containing three columns (here `export_data_lcurve.txt`). This contains:
+- Output text file containing the relaxation spectrum (`data_output`; in the example above `output_data.txt`). This contains two columns, the relaxation times and their respective relaxation strengths. Note that the relaxation times will be in the same unit as the provided time data.
+- If enabled, a second file with the L-curve data will be created containing three columns (in the example above `otput_data_lcurve.txt`). This contains:
   - On the first line: the optimal regression parameter,  the residual- and the solution norm at the corner of the L-curve.
   - The rest of the file: all 200 tested regularization parameters, and the found residual- and the solution norms. 
 - The optimal regularization parameter and the peak in relaxation time are also printed to the console.
@@ -83,12 +85,14 @@ No header row should be included.
 ## Notes
 
 - The script uses singular value decomposition and Tikhonov regularization. Familiarity with these methods is not required, but it is helpful for interpreting the results.
-- Make sure the input data is properly formatted and does not contain missing or malformed values. Initial measurement noise (e.g. due to step-raise) must be deleted. The script is agnostic against normalization of the data.
+- Make sure the input data is properly formatted and does not contain missing or malformed values. Initial measurement noise (e.g. due to step-raise) must be deleted. The script is agnostic against normalization of the data. Example input- and output data can be found in the data folder.
 
 ## Author
 
-Roy Wink  
-Eindhoven University of Technology, 2025
+Roy Wink, 2025
+Eindhoven University of Technology
+Department of Chemical Engineering & Chemistry
+Laboratory of Supramolecular Polymer Chemistry
 
 ## License
 
