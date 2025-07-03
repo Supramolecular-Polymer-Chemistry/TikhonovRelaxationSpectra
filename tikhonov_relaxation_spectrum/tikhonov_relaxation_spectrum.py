@@ -22,8 +22,8 @@
 
 # ----- ENTER SETTINGS HERE ---------------------------------------------------
 
-data_input  = 'path\\input_data.txt'
-data_output = 'path\\ouput_data.txt'
+data_input  = 'data\\input_data.txt'
+data_output = 'data\\ouput_data.txt'
 
 export_lcurve = True
 
