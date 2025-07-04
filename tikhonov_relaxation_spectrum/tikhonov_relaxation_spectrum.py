@@ -23,7 +23,7 @@
 # ----- ENTER SETTINGS HERE ---------------------------------------------------
 
 data_input  = 'path\\input_data.txt'
-data_output = 'path\\ouput_data.txt'
+data_output = 'path\\output_data.txt'
 
 export_lcurve = True
 
