@@ -89,9 +89,9 @@ No header row should be included.
 
 ## Author
 
-Roy Wink, 2025
-Eindhoven University of Technology
-Department of Chemical Engineering & Chemistry
+Roy Wink, 2025\
+Eindhoven University of Technology\
+Department of Chemical Engineering & Chemistry\
 Laboratory of Supramolecular Polymer Chemistry
 
 ## License
