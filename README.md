@@ -77,7 +77,7 @@ No header row should be included.
 - A plot of the computed relaxation spectrum
 - A plot of the L-curve with the selected corner
 - Output text file containing the relaxation spectrum (`data_output`; in the example above `output_data.txt`). This contains two columns, the relaxation times and their respective relaxation strengths. Note that the relaxation times will be in the same unit as the provided time data.
-- If enabled, a second file with the L-curve data will be created containing three columns (in the example above `otput_data_lcurve.txt`). This contains:
+- If enabled, a second file with the L-curve data will be created containing three columns (in the example above `output_data_lcurve.txt`). This contains:
   - On the first line: the optimal regression parameter,  the residual- and the solution norm at the corner of the L-curve.
   - The rest of the file: all 200 tested regularization parameters, and the found residual- and the solution norms. 
 - The optimal regularization parameter and the peak in relaxation time are also printed to the console.
