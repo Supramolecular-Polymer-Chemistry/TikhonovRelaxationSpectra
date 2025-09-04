@@ -23,6 +23,8 @@ For more background information on the method and especially the limits of this 
 
 All required packages are included by default in the Anaconda distribution.
 
+Spyder can be downloaded via the [website](https://www.spyder-ide.org/).
+
 ## File Structure
 
 Download the `tikhonov_relaxation_spectrum.py` script from this GitHub, and place the script and data files in a structured folder layout. For example:
