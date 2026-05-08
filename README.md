@@ -10,7 +10,7 @@ The Python script that was made for this work is built in such a manner that set
 
 For more background information on the method and especially the limits of this script, refer to the associated article and its supporting information: 
 
-> Wink, R. *et al.* A Practical User Guide to Stress Relaxation Spectra of Dynamic Covalent Networks. ACS Polymers Au **2025**, XXXX, XXX, XXX-XXX
+> Wink, R. *et al.* A Practical User Guide to Stress Relaxation Spectra of Dynamic Covalent Networks. ACS Polymers Au **2026**, 6 (1), 107-116
 > https://doi.org/10.1021/acspolymersau.5c00119
 
 ## Requirements
