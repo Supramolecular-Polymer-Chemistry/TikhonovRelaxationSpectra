@@ -10,7 +10,8 @@ The Python script that was made for this work is built in such a manner that set
 
 For more background information on the method and especially the limits of this script, refer to the associated article and its supporting information: 
 
-> Wink, R. *et al.* "Title of the Paper." Journal Name, Volume(Issue), Year. [DOI or URL]
+> Wink, R. *et al.* A Practical User Guide to Stress Relaxation Spectra of Dynamic Covalent Networks. ACS Polymers Au **2026**, 6 (1), 107-116
+> https://doi.org/10.1021/acspolymersau.5c00119
 
 ## Requirements
 
@@ -22,6 +23,8 @@ For more background information on the method and especially the limits of this 
   - scipy
 
 All required packages are included by default in the Anaconda distribution.
+
+Spyder can be downloaded via the [website](https://www.spyder-ide.org/).
 
 ## File Structure
 
@@ -63,7 +66,7 @@ The input file should be a plain text file with two columns:
 - First column: time values (e.g. in seconds)
 - Second column: corresponding experimental data
 
-Data columns should be separated by whitespace or tabs. If the user prefers a different delimiter, one could chage the code to define one, in line 502:
+Data columns should be separated by whitespace or tabs. If the user prefers a different delimiter, one could chage the code to define one, in line 507:
 
 ```python
 import_file = np.loadtxt(data_input, delimiter=',')
@@ -77,7 +80,7 @@ No header row should be included.
 - A plot of the computed relaxation spectrum
 - A plot of the L-curve with the selected corner
 - Output text file containing the relaxation spectrum (`data_output`; in the example above `output_data.txt`). This contains two columns, the relaxation times and their respective relaxation strengths. Note that the relaxation times will be in the same unit as the provided time data.
-- If enabled, a second file with the L-curve data will be created containing three columns (in the example above `otput_data_lcurve.txt`). This contains:
+- If enabled, a second file with the L-curve data will be created containing three columns (in the example above `output_data_lcurve.txt`). This contains:
   - On the first line: the optimal regression parameter,  the residual- and the solution norm at the corner of the L-curve.
   - The rest of the file: all 200 tested regularization parameters, and the found residual- and the solution norms. 
 - The optimal regularization parameter and the peak in relaxation time are also printed to the console.
@@ -89,9 +92,9 @@ No header row should be included.
 
 ## Author
 
-Roy Wink, 2025
-Eindhoven University of Technology
-Department of Chemical Engineering & Chemistry
+Roy Wink, 2025\
+Eindhoven University of Technology\
+Department of Chemical Engineering & Chemistry\
 Laboratory of Supramolecular Polymer Chemistry
 
 ## License

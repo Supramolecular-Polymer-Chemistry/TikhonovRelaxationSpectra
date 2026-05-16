@@ -1,14 +1,29 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-authors:
-- family-names: "YOUR_NAME_HERE"
-  given-names: "YOUR_NAME_HERE"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-- family-names: "Lisa"
-  given-names: "Mona"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-title: "TikhonovRelaxationSpectra"
-version: 1.0.0
-doi: 10.5281/zenodo.1234
-date-released: 2025-04-17
-url: "https://github.com/Supramolecular-Polymer-Chemistry/TikhonovRelaxationSpectra"
+title: >-
+  A Practical User Guide to Stress Relaxation Spectra of Dynamic Covalent Networks
+abstract: |
+  Tikhonov regularization is a powerful method for numerically extracting relaxation spectra from transient stress relaxation data, but its practical use under experimental conditions may be challenging. In this Tutorial, we present a systematic simulation study where we evaluate the effect of common experimental challenges on the accuracy of extracted spectra, including noisy data, limited measurement times, and stretched or multimodal relaxation behavior. We found that Tikhonov regularization reliably recovers dominant relaxation times under a wide range of conditions, but loses resolution when modes overlap or relaxation is incomplete. These results provide practical guidance for interpreting stress relaxation data. We emphasize that prior knowledge of the underlying chemistry as well as complementary analysis methods remain essential for reliable determination of the relaxation time. Together, these insights help unlock the full potential of relaxation spectra in characterizing dynamic covalent networks.
+type: journalArticle
+database: ACS Publications
+date-accessed: 2026-02-11T08:15:33Z
+issue: 1
+journal: ACS Polym. Au
+pages: 107-116
+publisher: American Chemical Society
+volume: 6
+url: https://doi.org/10.1021/acspolymersau.5c00119
+authors: 
+  - family-names: Wink
+	given-names: Roy
+  - family-names: Geerars
+	given-names: Oscar B.
+  - family-names: Heuts
+	given-names: Johan P.A.
+  - family-names: Sijbesma
+	given-names: Rint P.
+date-published: 2026-02-11
+identifiers: 
+  - type: doi
+	value: 10.1021/acspolymersau.5c00119
+
