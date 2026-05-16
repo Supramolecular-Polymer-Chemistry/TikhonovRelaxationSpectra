@@ -285,6 +285,11 @@ def plot_lc(rho, eta, reg_param, reg_corner, rho_c, eta_c):
     Example:
         plot_lc(rho, eta, reg_param, reg_corner, rho_c, eta_c)
     """
+    
+    # flatten column vectors to 1D arrays
+    rho = np.asarray(rho).ravel()
+    eta = np.asarray(eta).ravel()
+    reg_param = np.asarray(reg_param).ravel()
 
     # number of identified points
     num_p = 6
